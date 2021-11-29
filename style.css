@@ -1,0 +1,274 @@
+ @import 'utilities.css';
+ 
+ body{
+     font-family: 'Poppins', sans-serif;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ :root{
+    --primary:rgb(49, 144, 199);
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+
+ }
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smotthing:antialiased;
+
+}
+
+header{
+    background-color:rgb(26, 22, 22);
+    
+}
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color:white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+    
+}
+
+.hero .right{
+    color:white;
+}
+.hero .right h4{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.9rem;
+}
+
+.hero .right h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 0.6rem;
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom:2rem;
+}
+.hero img{
+    width: 400px;
+}
+
+section{
+    padding: 6rem 0;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h3{
+    font-size: 1 rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    color: var(--ternary);
+    line-height: 1.9;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+section.about .social a:hover{
+    background: var(--primary);
+}
+
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 0.5;
+}
+section.Education{
+    background: var(--light);
+}
+section.Education .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+}
+section.Education .card-wrapper .card{
+    background:white;
+    padding:  3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .9s ease;
+}
+section.Education .card-wrapper .card h2{
+    
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+section.Education .card-wrapper .card p{
+    color:var(--ternary);
+    line-height: 1.6;
+}
+section.Education .card-wrapper .card:hover{
+    background:rgb(125, 227, 240);
+
+}
+section.Education .card-wrapper .card:hover h2 ,section.services .card-wrapper .card:hover p{
+    color:var(--pure);
+
+}
+section.Expertise{
+    background:var(--light);
+}
+
+section.Expertise .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.Expertise .card-wrapper .card{
+    background:white;
+    padding:  3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .9s ease;
+}
+section.Expertise .card-wrapper .card h2{
+    
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+section.Expertise .card-wrapper .card p{
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.Expertise .card-wrapper .card:hover{
+    background: rgb(125, 227, 240);
+
+}
+section.Expertise .card-wrapper .card:hover h2 ,section.work .card-wrapper .card:hover p{
+    color: var(--pure);
+
+}
+section.contact .section-heading{
+    margin-bottom: 2rem;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper img{
+    margin-bottom: 2.5rem;
+
+}
+section.contact .card-wrapper .card h2{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h6{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea:focus{
+    outline:none;
+}
+section.contact input:focus{
+    outline:none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: rgb(19, 18, 18);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer-socails a{
+    margin-right: 1rem;
+}
+footer .footer-socails{
+    margin-bottom: 2rem;
+}
+footer .Copyright{
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+

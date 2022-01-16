@@ -1,18 +1,13 @@
 .flex{
     display: flex;
 }
-
-
-.items-center{
-    align-items: center;
-}
 .justify-between{
     justify-content: space-around;
 }
 
 .btn{
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+    padding: 0.2rem 0.2rem;
+    font-size: 0.5rem;
     font-family: 600;
     border: 2px solid transparent;
     outline:none ;
@@ -34,4 +29,3 @@
 .flex-1{
     flex: 1;
 }
-
